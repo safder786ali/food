@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlay"
+    tools:context=".MainActivity">
+
+
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/locationArea"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/black"
+        android:padding="10dp"
+        android:text="Clement Town"
+        android:textColor="@color/black"
+        app:drawableHeight="40dp"
+        app:drawableLeftCompat="@drawable/resrau_icon"
+        app:drawableWidth="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/area"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="20dp"
+        android:text="clement town lane no.1 near ISBT Dehradunn"
+        app:drawableHeight="40dp"
+        app:layout_constraintTop_toBottomOf="@id/locationArea" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sliderRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.xw.repo.VectorCompatTextView
+                android:id="@+id/productHead"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="All Products"
+                android:textColor="@color/black"
+                app:drawableHeight="40dp"
+                app:drawableWidth="40dp"
+                app:layout_constraintTop_toBottomOf="@id/sliderRV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@id/productHead" />
+
+            <com.xw.repo.VectorCompatTextView
+                android:id="@+id/mostPopularHead"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Most Popular"
+                android:textColor="@color/black"
+                app:drawableHeight="40dp"
+                app:drawableWidth="40dp"
+                app:layout_constraintTop_toBottomOf="@id/productRV" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mostPopularRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@id/mostPopularHead" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

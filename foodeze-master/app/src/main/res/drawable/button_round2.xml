@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="@color/colorPrimary" />
+<padding android:top="0dp"
+    android:left="0dp"
+    android:right="0dp"
+    android:bottom="0dp" />
+<corners android:radius="5dp" />
+
+<!-- When item pressed this item will be triggered -->
+<item android:state_pressed="true">
+    <shape android:shape="rectangle">
+        <corners android:radius="20dp" />
+        <solid android:color="@color/box_10" />
+    </shape>
+</item>
+
+</shape>

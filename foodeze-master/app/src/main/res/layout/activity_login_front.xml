@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginFront">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/frontpic"
+        app:layout_constraintTop_toBottomOf="@id/image1" />
+
+
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/facebook"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30sp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:background="@drawable/button_roundwhite"
+        android:elevation="4dp"
+        android:text="Continue with Facebook"
+        app:drawableHeight="40dp"
+        app:drawableRightCompat="@drawable/fb_icon"
+        app:drawableWidth="40dp"
+        app:layout_constraintTop_toBottomOf="@id/image2" />
+
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/google"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30sp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:text="Continue with Google    "
+        app:drawableHeight="40dp"
+        app:drawableRightCompat="@drawable/google_icon"
+        app:drawableWidth="40dp"
+        android:outlineProvider="background"
+        android:background="@drawable/button_roundwhite"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/facebook" />
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/gmail"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30sp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Continue with Gmail"
+        app:drawableHeight="40dp"
+        app:drawableRightCompat="@drawable/gmail_icon"
+        app:drawableWidth="40dp"
+        android:outlineProvider="background"
+        android:background="@drawable/button_roundwhite"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/google" />
+
+    <com.xw.repo.VectorCompatTextView
+        android:id="@+id/phone"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30sp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Login with Phone number"
+        app:drawableHeight="40dp"
+        app:drawableRightCompat="@drawable/mob_icon"
+        app:drawableWidth="40dp"
+        app:layout_constraintTop_toBottomOf="@id/gmail" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footerlogin"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
